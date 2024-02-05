@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Syne:wght@400;700&display=swap");
+
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+$color-primary: #B744B8;
+$color-secondary: #16CAF2;
+$color-accent: #0CCA4A;
+$color-white: #FCFAFA;
+$color-black: #2B2D42;
+
+$font-poppins: Poppins, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-syne: Syne, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*---------------------------------------/*
+ # GENERIC - BOOTSTRAP
+/*---------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 10vh;
+    background: $color-white;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
