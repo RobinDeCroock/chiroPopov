@@ -86,12 +86,38 @@ a:hover {
 .aspi {
   background-color: rgba(227, 79, 32, .5);
 }
-.bg-dark {
+.bg-dark, .text-bg-dark{
   background-color: #03426a !important;
 }
 .img-fluid{
   object-fit: cover;
   height: 100%;
+}
+@media (width: 769px) {
+  .img-fluid {
+    object-fit: cover;
+   height: auto;
+  }
+  .mobileImg {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  .mobileImg img {
+    position: absolute;
+    bottom: 0;
+  }
+
+}
+@media (max-width: 769px) {
+  address iframe {
+    width: 30vh;
+    height: 20vh;
+
+  }
+  
 }
 .flyers {
   background-color: #fff;
@@ -117,6 +143,11 @@ footer {
 .card-img{
   height: 200px;
   object-fit: cover;
+}
+.header-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 
