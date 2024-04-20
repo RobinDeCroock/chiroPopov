@@ -1,142 +1,145 @@
 <!doctype html>
 <html lang="nl">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chiro Popov | Afdelingen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/chiro.css">
+    <script src="../js/navigation.js"></script>
 </head>
 
 <body class="padding-top">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">Chiro Popov</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Chiro Popov</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html#about">Over ons</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="afdelingen.html">Afdelingen</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html#calender">Kalender</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="bosfeesten.chiropopov.be">Bosfeesten</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="shop.chiropopov.be">Shop</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
+        <div id="nav-container">
+            <script>
+                fetch('../templates/nav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector('#nav-container').innerHTML = data;
+                    });
+            </script>
+        </div>
+    <main class="pt-4">
         <section class="container">
-            <div class="card mb-3">
+            <div class="card mb-3 pinkel">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="../assets/afdelingen/Test/Pinkel.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Pinkels</h5>
+                            <h4 class="card-title">Pinkels</h4>
                             <p class="card-text">
                                 De allerkleinsten maar met het grootste enthousiasme. Sommigen komen met vriendjes uit hun school, familie of helemaal alleen, maar allemaal deel van onze groep. Hoewel ze de jongsten zijn durven ze soms meer dan onze oudere groepen. Op zondag laten ze zich gaan met mini-avonturen, knutselen, spannende raadsels en moppen tappen.
                             </p>
                             <p class="card-text">
-                                Samen met hun leiding groeien ze op tot echte helden en maken ze veel nieuwe vrienden. Ze gaan hier ook op hun eerste daguitstap zonder ouders (meestal moeilijker voor de mama en papa dan voor hun zelf ;-) ) en durven misschien ook al op kamp te gaan.
+                                Samen met hun leiding groeien ze op tot echte helden en maken ze veel nieuwe vrienden. Ze gaan hier ook op hun eerste daguitstap zonder ouders (meestal moeilijker voor de mama en papa dan voor hun zelf ;-)) en durven misschien ook al op kamp te gaan.
                             </p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <!-- Phone numbers -->
+                            <ul class="text-decoration-none"> 
+                                <li>Darko +324 84 38 11 60</li>
+                                <li>Yanis +324 67 67 35 72</li>
+                                <li>Britt +324 77 32 28 73</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 speelclub">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="../assets/afdelingen/Test/Speelclub.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h4 class="card-title">Speelclub</h4>
+                            <p class="card-text">Dit zijn één van de jongsten in de Chiro. Ze komen elke zondag weer om te ravotten en om samen met hun leiding allerlei spannende avonturen te beleven. Voor hen is het kamp meestal de eerste keer dat ze zonder hun ouders voor 10 dagen weg zijn, maar zij bewijzen keer op keer dat zij, als jongsten, ook hun mannetje (vrouwtje) kunnen staan.</p>
+
+                            <p class="card-text">Samen met hun leiding duiken ze onder in een fantasiewereld van bosberen en chocoprinsen, spelen ze poppenkast of verkleden ze zich in een heks. Ze trekken al eens op een tocht vol spelletjes, plezante liedjes en gekke opdrachten.
+                            </p>
+                            <ul>
+                                <li>Robbe +324 77 33 87 45 </li>
+                                <li>Louise +324 71 68 22 13</li>
+                                <li>Litsa +324 89 55 52 02</li>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 rakwi">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="../assets/afdelingen/Test/Rakwi.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h4 class="card-title">Rakwi</h4>
+                            <p class="card-text">Deze stoere jongens en meisjes worden bij de rakwileiding verwacht om samen met hen het aapje uit te hangen, of om de gekste creaturen in klei te maken. Ze ravotten zich doorgaans te pletter, trekken er al eens op uit met de fiets en lopen zich de ziel uit hun lijf bij een supergroot stratego-bosspel. In het geniep lachen de meisjes met de jongens, of vertellen ze al eens een vuile mop.</p>
+                            <ul>
+                                <li>Eron +324 78 10 37 61 </li>
+                                <li>Anouck +324 77 09 36 95</li>
+                                <li>Ilana +324 70 92 43 59</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 tito">
                 <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    <div class="col-md-4 justify-content-center align-items-center d-flex">
+                        <img src="../assets/afdelingen/Test/Tito.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h4 class="card-title">Tito's</h4>
+                            <p class="card-text">De Tito’s maken al eens een daguitstap met de fiets of met de trein om in één of andere stad een groot zoekspel te doen. Pleinspelen vinden ze ook best leuk, vooral wanneer er wat tactiek aan te pas komt. Soms schminken ze zich om ter gekst, en in de zomer kappen ze hun leiding nat.</p>
+
+                            <ul>
+                                <li>Annelore +324 72 93 20 83</li>
+                                <li>Robin +324 68 13 42 77</li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 keti">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="../assets/afdelingen/Test/Keti.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Keti's</h5>
+                            <p class="card-text">De Keti’s trekken op avontuur, doen een tweedaagse tocht met de rugzak, of bouwen zelf een vlot om er dan een vijver mee af te varen. Ze beulen zich ook wel eens af in een zelfverzonnen sport, of zetten hun lokaal volledig op z’n kop. Wie weet maken ze wel een film waarin ze zelf schitteren als acteur.
+                            </p>
+
+                            <ul>
+                                <li>Winke +324 74 63 13 85</li>
+                                <li>Margot +324 73 93 70 71</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card mb-3">
+            <div class="card mb-3 aspi">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="../assets/afdelingen/Test/Aspi.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Aspi's</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <p class="card-text">De Aspi’s nemen het er goed van en wisselen hevige spelen af met stevige babbels in het gezelligste hoekje van het lokaal. Op gezette tijden springen ze de leiding van een jongere afdeling bij. Zo proeven ze wat het is om leiding te zijn, want dat is voor hen zeer nabije toekomst. Samen met hun leiding riskeren ze zich aan het touwenparcours of nemen ze deel aan een workshop. Op grote evenementen kom je heel wat aspi-ploegen tegen. Zelf organiseren ze een heuse aspi-fuif.</p>
+
+                            <ul>
+                                <li>Lana +324 78 51 20 35</li>
+                                <li>Jana +324 74 41 03 72</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -144,44 +147,17 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>De Leiding</h2>
+    <div class="footer-container">
 
-                    <p>
-                        Heb je een dringende vraag? Stuur of bel onze groepsleiding!
-                    </p>
-                    <ul>
-                        <li>Winke Kindermans - +32 474 63 13 85</li>
-                        <li>Robbe Van Riet - +32 477 33 87 45</li>
-                        <li>Litsa Boesmans - +32 489 55 52 02</li>
-                    </ul>
+        <script>
+            fetch('../templates/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('.footer-container').innerHTML = data;
+                });
+        </script>
+    </div>
 
-                    <p>
-                        Heb je vragen specifiek voor de afdelingsleiding, kijk dan op de <a href="afdelingen.html">afdelingspagina</a>.
-                    </p>
-                </div>
-
-                <div class="col">
-                    <h2>Kom In Contact!</h2>
-
-                    <p>info@chiropopov.be</p>
-
-                    <p>Chiro Popov Gijzegem op Facebook</p>
-                </div>
-
-                <address class="col">
-                    <h2>Breng Ons Een Bezoek</h2>
-
-                    <p>Eerste bochtweg 1</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.6961222196164!2d4.056634976921085!3d50.98480724874526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3970a1430fa49%3A0x9737e92cfa0f6b47!2sChiro%20Popov%20vzw!5e0!3m2!1sen!2sbe!4v1706266883410!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </address>
-            </div>
-        </div>
-
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

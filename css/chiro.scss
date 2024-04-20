@@ -14,7 +14,46 @@
     transition: 0.3s ease;
     scroll-behavior: smooth;
 }
-
+.header-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    padding: 20px 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .tito{
+    background-color: rgba(189, 21, 34, .5);
+  
+  }
+  
+  .pinkel {
+    background-color: rgba(130, 73, 132, .5);
+  }
+  .speelclub {
+    background-color: rgba(227, 179, 32, .5);
+  }
+  .rakwi {
+    background-color: rgba(58, 181, 74, .5);
+  }
+  .keti {
+    background-color: rgba(28, 58, 201, .5);
+  }
+  .aspi {
+    background-color: rgba(227, 79, 32, .5);
+  }
+  .bg-dark {
+    background-color: #00124D !important;
+  }
+  .img-fluid{
+    object-fit: cover;
+    height: 100%;
+  }
+  
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
