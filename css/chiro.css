@@ -13,6 +13,9 @@
   transition: 0.3s ease;
   scroll-behavior: smooth;
 }
+h2{
+  color: #03426a !important;
+}
 .bg-blue-subtle {
   background-color: #dbf4f6 !important;
 }
@@ -55,11 +58,11 @@ a:hover {
   background-color: #B91522 !important;
 }
 .btn-secondary {
-  background-color: #00124D !important;
+  background-color: #03426a !important;
   border: none !important;
 }
 .btn-secondary:hover {
-  background-color: #000A2F !important;
+  background-color: #00124D !important;
 }
 .divider {
   border-top: 1px solid #000;
@@ -91,7 +94,6 @@ a:hover {
 }
 .img-fluid{
   object-fit: cover;
-  height: 100%;
 }
 @media (width: 769px) {
   .img-fluid {
@@ -116,6 +118,14 @@ a:hover {
     width: 30vh;
     height: 20vh;
 
+  }
+
+}
+@media  (max-width: 576px){
+
+  .divider-mobile {
+    border-top: 1px solid #000;
+    padding-top: 3rem;
   }
   
 }
@@ -142,7 +152,6 @@ footer {
 }
 .card-img{
   height: 200px;
-  object-fit: cover;
 }
 .header-card p {
   font-size: 1rem;

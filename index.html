@@ -16,69 +16,54 @@
     <div class="">
         <div id="nav-container"></div>
         <script>
-                    fetch('/templates/nav.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('nav-container').innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Fout bij het laden van de nav:', error);
-            });
+            fetch('/templates/nav.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('nav-container').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Fout bij het laden van de nav:', error);
+                });
         </script>
         <div class="header-box">
             <div class="bg-dark-subtle text-center p-4 rounded-2 header-card">
-            <h1>Scouts da's durven, Chiro da's doen!</h1>
-            <p>Verveel je je op zondag?</p>
-            <p>Zin om nieuwe vrienden te maken?</p>
-            <p>Neem zeker eens een kijkje bij ons!</p>
-            <div class="d-flex gap-3 justify-content-center">
-                <button type="button" class="btn btn-primary" onclick="goToSection('aboutus')">Over ons</button>
-            <button type="button" class="btn btn-secondary" onclick="goToSection('calender')">Kalender</button>
+                <h1>Scouts da's durven, Chiro da's doen!</h1>
+                <p>Verveel je je op zondag?</p>
+                <p>Zin om nieuwe vrienden te maken?</p>
+                <p>Neem zeker eens een kijkje bij ons!</p>
+                <div class="d-flex gap-3 justify-content-center mt-3">
+                    <button type="button" class="btn btn-primary" onclick="goToSection('aboutus')">Over ons</button>
+                    <button type="button" class="btn btn-secondary" onclick="goToSection('calender')">Kalender</button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
 
     <div class="modal fade" id="flyerModal" tabindex="-1" aria-labelledby="flyerModallabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="flyerModallabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="flyerModallabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="Flyer" class="img-fluid" id="flyerModalImage" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <img src="" alt="Flyer" class="img-fluid" id="flyerModalImage" />
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 
 
     <main>
-        <section class="container">
-            <div class="row">
+        <section  class="container">
+            <div class="row flex-column flex-md-row">
                 <article class="col">
                     <h2>Er zijn nog mededelingen</h2>
-                    <div class="card mb-3 bg-blue-subtle">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/assets/leiders/litsa.jpeg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Litsa Boesmans</h5>
-                                    <p class="card-text">
-                                        Nu het slechter weer begint te worden vergeet zeker geen reserve kledij!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="card mb-3 bg-blue-subtle">
                         <div class="row g-0">
@@ -89,7 +74,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Robbe Van Riet</h5>
                                     <p class="card-text">
-                                        piepiepopoo
+                                        Vergeet zeker niet om je in te schrijven voor de bosfeesten!
                                     </p>
                                 </div>
                             </div>
@@ -113,7 +98,7 @@
                     </div>
 
                 </article>
-                <article id="about" class="col">
+                <article id="aboutus" class="col">
                     <h2>Het Verhaal Van Popov</h2>
 
                     <p class="lead">
@@ -137,22 +122,25 @@
                         Wij vragen aan het begin van het jaar €25 inschrijvingsgeld (met een UITPAS kansentarief betaal
                         je €6,25). Voor dit geld kan een lid een heel jaar lang de activiteiten komen meevolgen. In dit
                         bedrag zit ook een Chiroverzekering inbegrepen. Verder vragen wij om elke week €1 mee te geven
-                        voor een drankje. De oudsten gaan vaak wel eens samen eten of frietjes halen, hoeveel dit kost
+                        voor een drankje en een koekje. De oudsten gaan vaak wel eens samen eten of frietjes halen, hoeveel dit kost
                         wordt afgesproken met de afdelingsleiding. Niemand wordt hier toe verplicht!
                     </p>
 
                     <p>Handige PDF's om te downloaden:</p>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush pb-5">
                         <li class="list-group-item">
-                            <a href="#" class="list-group-item-action">Het regelement van de ruilkas</a>
+                            <a href="/assets/files/ruilkas.pdf" class="list-group-item-action" download>Het reglement
+                                van de ruilkas</a>
                         </li>
 
                         <li class="list-group-item">
-                            <a href="#" class="list-group-item-action">Het infoboekje</a>
+                            <a href="/assets/files/infoboekje.pdf" class="list-group-item-action" download>Het
+                                infoboekje</a>
                         </li>
 
                         <li class="list-group-item">
-                            <a href="#" class="list-group-item-action">Download het inschrijvingsdocument voor het
+                            <a href="/assets/files/inschrijving.pdf" class="list-group-item-action" download>Download
+                                het inschrijvingsdocument voor het
                                 werkjaar 2023-2024.</a>
                         </li>
                     </ul>
@@ -160,8 +148,8 @@
             </div>
         </section>
 
-        <section id="aboutus" class="container divider">
-            <div class="row">
+        <section  class="container divider">
+            <div class="row flex-sm-column flex-md-row">
                 <article class="col">
                     <h2>Het Uniform & Jaarthema</h2>
 
@@ -188,13 +176,14 @@
 
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <a href="" class="list-group-item-action"  data-bs-toggle="modal" data-bs-target="#flyerModal" data-bs-source="assets/flyers/ruilkas.png"
-                            data-bs-title="Ruilkas">Klik hier voor het ruilkas reglement</a>
+                            <a href="" class="list-group-item-action" data-bs-toggle="modal"
+                                data-bs-target="#flyerModal" data-bs-source="assets/flyers/ruilkas.png"
+                                data-bs-title="Ruilkas">Klik hier voor het ruilkas reglement</a>
                         </li>
                     </ul>
                 </article>
 
-                <article class="col">
+                <article class="col divider-mobile">
 
                     <h2>Chiro Popov is een UITPAS-organisatie</h2>
                     <img src="/assets/uitpas.png" class="img-fluid rounded card-img" alt="">
@@ -217,24 +206,34 @@
                     <p>
                         Heb je nog geen UiTPAS met kansentarief en denk je dat je hier recht op hebt? Vraag dit zeker
                         eens na bij het OCMW of het administratief centrum van jouw gemeente. Een UiTPAS met
-                        kansentarief kan je gratis verkijgen. Meer info op www.aalst.be/uitpas
+                        kansentarief kan je gratis verkijgen. <a
+                            href="https://aalst.be/cultuur-sport-en-vrije-tijd/vrije-tijd/uitpas#uitpas-met-kansentarief">Klik
+                            hier voor meer info.</a>
                     </p>
                 </article>
 
-                
+
             </div>
 
             <div class="flyers">
-                <h2>Niewste flyers voor onze evenementen</h2>
+                <h2>Nieuwste flyers voor onze evenementen</h2>
+                <!-- MAX 3 ITEMS PER ROW -->
                 <div class="row">
+
                     <div class="col">
-                        <img src="assets/flyers/flyerSchijtJeRijk.png" alt="Flyer 1" class="img-fluid zoomin" data-bs-toggle="modal" data-bs-target="#flyerModal" data-bs-source="assets/flyers/flyerSchijtJeRijk.png"
-                        data-bs-title="Schijt Je Rijk!" />
+                        <img src="assets/flyers/flyerKoersJeRijk.jpg" alt="Flyer 1" class="img-fluid zoomin"
+                            data-bs-toggle="modal" data-bs-target="#flyerModal"
+                            data-bs-source="assets/flyers/flyerKoersJeRijk.jpg" data-bs-title="Koers Je Rijk!" />
                     </div>
                     <div class="col">
                         <img src="assets/flyers/flyerKrakMoment2024.jpeg" alt="Flyer 2" class="img-fluid zoomin"
-                        data-bs-toggle="modal" data-bs-target="#flyerModal" data-bs-source="assets/flyers/flyerKrakMoment2024.jpeg"
-                        data-bs-title="Krakmoment" />
+                            data-bs-toggle="modal" data-bs-target="#flyerModal"
+                            data-bs-source="assets/flyers/flyerKrakMoment2024.jpeg" data-bs-title="Krakmoment" />
+                    </div>
+                    <div class="col">
+                        <img src="assets/flyers/flyerSchijtJeRijk.png" alt="Flyer 1" class="img-fluid zoomin"
+                            data-bs-toggle="modal" data-bs-target="#flyerModal"
+                            data-bs-source="assets/flyers/flyerSchijtJeRijk.png" data-bs-title="Schijt Je Rijk!" />
                     </div>
                 </div>
             </div>
@@ -266,7 +265,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-        <script src="/js/navigation.js"></script>
+    <script src="/js/navigation.js"></script>
 </body>
 
 </html>

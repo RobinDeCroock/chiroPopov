@@ -2,7 +2,7 @@
 <script src="../js/navigation.js"></script>
 <nav class=" bg-dark navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Chiro Popov</a>
+        <a class="navbar-brand" onclick="navigate('/index.html')">Chiro Popov</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation">
@@ -18,22 +18,22 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">Over ons</a>
+                        <a class="nav-link" id="about" onclick="navigate('/index.html#about','about')">Over ons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="navigate('/pages/afdelingen.html')">Afdelingen</a>
+                        <a class="nav-link" id="afdelingen" onclick="navigate('/pages/afdelingen.html','afdelingen')">Afdelingen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="navigate('/index.html#calender')">Kalender</a>
+                        <a class="nav-link" id="calendar" onclick="navigate('/index.html#calender','calendar')">Kalender</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://bosfeesten.chiropopov.be/">Bosfeesten</a>
+                        <a class="nav-link" id="bosfeesten" href="https://bosfeesten.chiropopov.be/">Bosfeesten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://chiropopov.be/shop/">Shop</a>
+                        <a class="nav-link" id="shop" href="https://chiropopov.be/shop/">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://projectp.chiropopov.be/">Project P</a>
+                        <a class="nav-link" id="projectp" href="https://projectp.chiropopov.be/">Project P</a>
                     </li>
                 </ul>
             </div>

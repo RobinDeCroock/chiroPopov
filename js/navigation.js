@@ -2,7 +2,7 @@ function goToSection(sectionName) {
     document.getElementById(sectionName).scrollIntoView();
 }
 
-function navigate(url)
+function navigate(url, id = null)
 {
     var baseUrl = window.location.origin;   
     window.location  = baseUrl + url;
