@@ -121,7 +121,7 @@ a:hover {
   }
 
 }
-@media  (max-width: 576px){
+@media  (max-width: 768px){
 
   .divider-mobile {
     border-top: 1px solid #000;
